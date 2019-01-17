@@ -76,3 +76,7 @@ header h2 {
 #player-score { 
     margin-right: 100px;
 }
+.turnOfHints {
+    text-align: right;
+    margin-right: 20px;
+}

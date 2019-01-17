@@ -13,19 +13,15 @@
 </head>
 <body>
     <header id="start-header">
-        <h2>Play with sheldon. Pick your hand shape to start</h2>
+        <h2>Play with Sheldon.<br/> Pick your hand shape to start</h2>
     </header>
     <div class="container">
 
             <label class="switch" id="hints-button">
                     <input id="descriptionCheckbox" type="checkbox" checked onclick="turnOfDescription()">
                     <span class="slider round"></span>
-                    <div class="choices">
-                        <span class="hint">Turn of hints</span>
-                    </div>
-                    
+                    <span style="display: block; position: relative; margin-top: 20px;">Turn of hints</span>
             </label>
-            
             <div class="choices">
                     <button type="button" id="paper" class="choice button-choice" onclick="letsPlay(this.id)">
                         <i class="icon-hand-paper-o">
@@ -62,7 +58,7 @@
 
 
             <div class="score">
-                    <div class="score-board name" id="player">Player</div>
+                    <div class="score-board name" id="player">You</div>
                     <div class="score-board name" id="cpu">Sheldon</div>
                     <br/>
                     <div class="score-board" id="player-score">0</div>

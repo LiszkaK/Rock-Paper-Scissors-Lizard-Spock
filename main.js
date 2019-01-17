@@ -27,8 +27,6 @@ let Addsheldon = (function () {
 
 function letsPlay(id) {
     reset();
-    //document.getElementById("start-header").style.visibility = "hidden";
-    //add num of round and set to in html
     let numOfRounds = addRound();
     document.getElementById("round-number").innerHTML =  numOfRounds;
 
@@ -91,23 +89,23 @@ function letsPlay(id) {
             yourScore = Addyour();
             document.getElementById("cpu-score").innerHTML = sheldonScore;
             document.getElementById("player-score").innerHTML = yourScore;
-            document.getElementById("message").style.color = "white";
+            document.getElementById("message").style.color = "blue";
         }
         if(numOfRounds == 5){
             if(Addyour() > Addsheldon()) {
-                message = "Congratulations, You Won!";
+                message = "<br/> Congratulations, You Won!";
                 document.getElementById("message").style.color = "green";
                 document.getElementById("message").style.fontSize = "26px";
             } else if(Addyour() < Addsheldon()) {
-                message = "You lose! Try again."
+                message = "<br/> You lose! Try again."
                 document.getElementById("message").style.color = "red";
                 document.getElementById("message").style.fontSize = "26px";
             } else {
-                message = "It is a tie!";
-                document.getElementById("message").style.color = "white";
+                message = "<br/> It is a tie!";
+                document.getElementById("message").style.color = "blue";
                 document.getElementById("message").style.fontSize = "26px";
             }
-            reset();
+            blockChocies();
             document.getElementById("again").style.display = "block";
             
         }
@@ -133,9 +131,9 @@ function whoWins(player, sheldon){
     const messeageObj = { 
         rock:     { rock: "Tie", paper: "Paper covers rock", scissors: "Rock breaks scissors", lizard: "Rock crushes lizard", spock: "Spock vaporizes rock" }, 
         paper:    { rock: "Paper covers rock", paper: "Tie", scissors: "Scissors cut paper", lizard: "Lizard eats paper", spock: "Paper disproves Spock" }, 
-        scissors: { rock: "Rock breaks scissors", paper: "Scissors cut paper", scissors: "Tie", lizard: "Scissors decapitate lizard", spock: "Spock smashes melts scissors" },
+        scissors: { rock: "Rock breaks scissors", paper: "Scissors cut paper", scissors: "Tie", lizard: "Scissors decapitate lizard", spock: "Spock melts scissors" },
         lizard:   { rock: "Rock crushes lizard", paper: "Lizard eats paper", scissors: "Scissors decapitate lizard", lizard: "Tie", spock: "Lizard poisons Spock" },
-        spock:    { rock: "Spock vaporizes rock", paper: "Paper disproves Spock", scissors: "Spock smashes melts scissors", lizard: "Lizard poisons Spock", spock: "Tie" }
+        spock:    { rock: "Spock vaporizes rock", paper: "Paper disproves Spock", scissors: "Spock melts scissors", lizard: "Lizard poisons Spock", spock: "Tie" }
     }
 
     let score = scorboardObj[player][sheldon];
@@ -143,7 +141,12 @@ function whoWins(player, sheldon){
 
     return[score, message];
 }
-
+function blockChocies() { 
+    const choices = document.getElementsByClassName("choice");
+    for (let i = 0; i < choices.length; i++){
+        choices[i].disabled = true;
+    }
+}
 function reset() {
     const choices = document.getElementsByClassName("choice");
     for (let i = 0; i < choices.length; i++){
