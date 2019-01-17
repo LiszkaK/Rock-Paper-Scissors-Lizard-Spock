@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fontello.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slide-button.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/again-button.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header id="start-header">
+        <h2>Play with sheldon. Pick your hand shape to start</h2>
+    </header>
+    <div class="container">
+
+            <label class="switch" id="hints-button">
+                    <input id="descriptionCheckbox" type="checkbox" checked onclick="turnOfDescription()">
+                    <span class="slider round"></span>
+                    <div class="choices">
+                        <span class="hint">Turn of hints</span>
+                    </div>
+                    
+            </label>
+            
+            <div class="choices">
+                    <button type="button" id="paper" class="choice button-choice" onclick="letsPlay(this.id)">
+                        <i class="icon-hand-paper-o">
+                            <span class="hint">Paper covers Rock<br/>Paper disproves Spock</span>
+                        </i>
+                    </button>
+                    <br/>
+                    <button type="button" id="rock" class="choice button-choice" onclick="letsPlay(this.id)">
+                        <i class="icon-hand-grab-o">
+                            <span class="hint">Rock crushes Lizard<br/>Rock crushes Scissors</span>
+                        </i>
+                    </button>
+                    <button type="button" id="scissors" class="choice button-choice" onclick="letsPlay(this.id)">
+                        <i class="icon-hand-scissors-o">
+                            <span class="hint">Scissors cuts Paper<br/>Scissors decapitates Lizard</span>
+                        </i>
+                    </button>
+                    <br/>
+                    <button type="button" id="lizard" class="choice button-choice" onclick="letsPlay(this.id)">
+                        <i class="icon-hand-lizard-o">
+                            <span class="hint">Lizard poisons Spock<br/>Lizard eats Paper</span>
+                        </i>
+                    </button>
+                    <button type="button" id="spock" class="choice button-choice" onclick="letsPlay(this.id)">
+                        <i class="icon-hand-spock-o">
+                            <span class="hint">Spock smashes Scissors<br/>Spock vaporizes Rock</span>
+                        </i>
+                    </button>
+            </div>
+            <div>
+                <div class="" id="round">ROUND</div>
+                <div class="" id="round-number">0</div>
+            </div>
+
+
+            <div class="score">
+                    <div class="score-board name" id="player">Player</div>
+                    <div class="score-board name" id="cpu">Sheldon</div>
+                    <br/>
+                    <div class="score-board" id="player-score">0</div>
+                    <div class="score-board" id="cpu-score">0</div>
+                    
+            </div>
+            <div>
+                <div class="" id="message"></div>  
+            </div>
+            <div id="again">
+                <button class="button" style="vertical-align:middle" onclick="reload()"><span>Again </span></button>
+            </div>
+    </div>
+</body>
+</html>

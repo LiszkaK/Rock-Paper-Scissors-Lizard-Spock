@@ -1,0 +1,6 @@
+
+.icon-hand-grab-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf255;&nbsp;'); }
+.icon-hand-paper-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf256;&nbsp;'); }
+.icon-hand-scissors-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf257;&nbsp;'); }
+.icon-hand-lizard-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf258;&nbsp;'); }
+.icon-hand-spock-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf259;&nbsp;'); }
