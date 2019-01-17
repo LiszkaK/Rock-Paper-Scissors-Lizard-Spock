@@ -11,16 +11,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/again-button.css" />
     <script src="main.js"></script>
 </head>
-<body>
+<body onload="turnOfDescription()"> 
     <header id="start-header">
         <h2>Play with Sheldon.<br/> Pick your hand shape to start</h2>
     </header>
     <div class="container">
 
             <label class="switch" id="hints-button">
-                    <input id="descriptionCheckbox" type="checkbox" checked onclick="turnOfDescription()">
+                    <input id="descriptionCheckbox" type="checkbox" onclick="turnOfDescription()">
                     <span class="slider round"></span>
-                    <span style="display: block; position: relative; margin-top: 20px;">Turn of hints</span>
+                    <span style="display: block; position: relative; margin-top: 20px;">Turn on hints</span>
             </label>
             <div class="choices">
                     <button type="button" id="paper" class="choice button-choice" onclick="letsPlay(this.id)">

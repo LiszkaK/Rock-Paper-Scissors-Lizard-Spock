@@ -10,6 +10,7 @@ function turnOfDescription() {
         }
     }
 }
+
 //counters score round 
 let addRound = (function () {
     let counter = 0;
