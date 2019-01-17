@@ -8,7 +8,6 @@ header h2 {
     margin: 0 auto;
     background-color: #259ff0;
     overflow: hidden;
-    
     padding: 10px;
 }
 .container{
@@ -79,4 +78,10 @@ header h2 {
 .turnOfHints {
     text-align: right;
     margin-right: 20px;
+}
+#TurnOn {
+    display: block; 
+    position: relative; 
+    margin-top: 20px; 
+    padding: 5px;
 }
