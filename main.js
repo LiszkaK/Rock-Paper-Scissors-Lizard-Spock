@@ -27,7 +27,7 @@ let Addsheldon = (function () {
 
 function letsPlay(id) {
     reset();
-    document.getElementById("start-header").style.visibility = "hidden";
+    //document.getElementById("start-header").style.visibility = "hidden";
     //add num of round and set to in html
     let numOfRounds = addRound();
     document.getElementById("round-number").innerHTML =  numOfRounds;
