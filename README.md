@@ -11,3 +11,6 @@
 * Paper disproves Spock
 * Spock vaporizes Rock
 * (and as it always has) Rock crushes Scissors
+
+### Screen:
+![alt text](https://raw.githubusercontent.com/LiszkaK/projectname/branch/path/to/img.png)
