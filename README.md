@@ -12,5 +12,6 @@
 * Spock vaporizes Rock
 * (and as it always has) Rock crushes Scissors
 
+### Play a game: https://liszkak.github.io/Rock-Paper-Scissors-Lizard-Spock/
 ### Screen:
 ![alt text](https://github.com/LiszkaK/Rock-Paper-Scissors-Lizard-Spock/blob/master/RPSLS.png)
